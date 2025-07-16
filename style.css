@@ -1,0 +1,610 @@
+@font-face {
+    font-family: 'Dirtyline36';
+    src: url(fonts/dirtyline-36daysoftype-2022.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+
+    background-color: #EEEEEE;
+}
+
+header{
+    position: absolute;
+    width: 80vw;
+    top: 0;
+    right: 0rem;
+    margin: 2rem 10vw 0;
+    border-radius: 100px;
+    padding: 0.5rem;
+
+    border: 1px solid #0008A4;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 100px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(153, 153, 153, 0.219);
+}
+header .container img.logo{
+    width: 8rem;
+}
+header .container nav{
+    display: none;
+    gap: 2rem;
+}
+header .container nav a{
+    padding: 1rem 4rem; 
+    border-radius: 100px;
+    
+    text-decoration: none;
+    font: 400 1rem 'Poppins';
+    
+    color: #0008A4;
+    border: 1px solid #0008A4;
+}
+header .container nav a.button{
+    border: none;
+
+    background-color: #BCFD00;
+}
+header .container nav a:hover,
+header .container a.button:hover{
+    color: #BCFD00;
+    background-color: #0008A4;
+    transition: all 300ms;
+}
+
+
+
+section.home{
+    margin: 20vh 10vw 10vh;
+}
+section.home .text img{
+    width: 5rem;
+    display: none;
+}
+section.home .text h1{
+    text-align: center;
+    margin-top: 1rem;
+    font: 400 2rem 'Poppins';
+    color: #0008A4;
+}
+section.home .text h1 span{
+    font-weight: 500;
+    background-color: #BCFD00;
+}
+section.home .text p.subtitle{
+    text-align: center;
+    font: 400 1rem 'Poppins';
+    color: #0008A4;
+}
+section.home .text p.subtitle span{
+    font-weight: 700;
+}
+section.home .text a.button{
+    display: block;
+    width: max-content;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-inline: auto;
+    border-radius: 100px;
+
+    font: 700 0.8rem 'Poppins';
+    text-decoration: none;
+    list-style: none;
+
+    color: #0008A4;
+    background-color: #BCFD00;
+}
+section.home .text a.button:hover{
+    color: #BCFD00;
+    background-color: #0008A4;
+    transition: all 300ms;
+}
+section.home img.main{
+    display: block;
+    width: 100%;
+    margin-top: 4rem;
+    transform: translateX(-1rem);
+}
+
+
+
+section.video{
+    position: relative;
+    padding: 10vh 10vw;
+    height: 70vh;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+section.video img.bg-object{
+    display: none;
+    width: 60vw;
+    top: -50vh;
+    left: -10vw;
+    position: absolute;
+}
+section.video h2{
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+    font: 400 2rem 'Poppins';
+
+    color: #0008A4;
+}
+section.video h2 span{
+    font-weight: 700;
+}
+section.video p.subtitle{
+    width: max-content;
+    margin: 1rem auto 0;
+    padding: 0 0.5rem;
+
+    font: 400 1rem 'Poppins';
+    text-align: center;
+
+    color: #0008A4;
+    background-color: #BCFD00;
+}
+section.video iframe{
+    display: block;
+    width: 100%;
+    height: 50%;
+    margin: 2rem auto 0;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+
+
+section.services{
+    padding: 10vh 10vw;
+}
+section.services .row{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+section.services .row .card{
+    position: relative;
+    display: block;
+    width: max-content;
+    margin: 0 auto 0;
+}
+section.services .row .card img{
+    width: 100%;
+}
+section.services .row .card .text{
+    position: absolute;
+    bottom: -1rem;
+    width: 100%;
+
+}
+section.services .row .card .text p.title{
+    padding: 1rem;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    
+    text-align: center;
+    font: 500 1rem 'Poppins';
+    
+    color: #0008A4;
+    background-color: #FFFFFF;
+
+}
+section.services .row .card .text p.title span{
+    font-size: 0.8rem;
+}
+section.services .row .card .text p.description{
+    margin-top: -1rem;
+    padding: 1.5rem 0.5rem 0.5rem;
+    border-radius: 0px 0px 15px 15px;
+    
+    font: 400 0.8rem 'Poppins';
+    text-align: center;
+    
+    color: #0008A4;
+    background-color: #BCFD00;
+}
+section.services .wrapper{
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 1rem;
+    gap: 1rem;
+    margin-top: 12rem;
+
+    border: 1px solid #0008A4;
+}
+section.services .wrapper p{
+    font: 400 1rem 'Poppins';
+    color: #0008A4;
+    text-align: center;
+}
+section.services .wrapper p span{
+    font-weight: 700;
+}
+section.services .wrapper a{
+    border-radius: 100px;
+    padding: 1rem;
+
+    text-decoration: none;
+    text-align: center;
+    font: 700 1rem 'Poppins';
+
+    color: #0008A4;
+    background-color: #BCFD00;
+}
+section.services .wrapper a:hover{
+    background-color: #0008A4;
+    color: #BCFD00;
+    transition: all 300ms;
+}
+
+
+
+div.strip{
+    width: max-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-block: 1rem;
+    background-color: #BCFD00;
+    animation: slide 18s linear infinite;
+}
+div.strip p{
+    font: 400 1rem 'Poppins';
+    color: #0008A4;
+    width: 20rem;
+    text-align: center;
+}
+div.strip p span{
+    font-weight: 700;
+}
+div.strip img{
+    width: 1.5rem;
+}
+@keyframes slide{
+    0%{transform: translate(calc((23.5 + 2rem) * (-1)));}
+    100%{transform: translate(calc((23.5rem + 2rem) * (-5)));}
+}
+
+
+
+div.line{
+    width: 50%;
+    display: block;
+    margin-inline: auto;
+    margin-block: 1rem;
+    height: 2px;
+    background: #ffffff;
+    background: linear-gradient(90deg, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(188, 253, 0, 1) 30%, 
+    rgba(188, 253, 0, 1) 70%, 
+    rgba(255, 255, 255, 0) 100%);
+}
+
+
+
+section.courses{
+    background-color: #0008A4;
+    padding: 10vh 10vw 30vh;
+    position: relative;
+}
+section.courses h2{
+    text-align: center;
+    font: 700 2rem 'Poppins';
+    color: #FFFFFF;
+}
+section.courses p.subtitle{
+    text-align: center;
+    font: 400 1rem 'Poppins';
+    color: #BCFD00;
+}
+section.courses p.subtitle span{
+    font-weight: 700;
+}
+section.courses .row{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+section.courses .portfolio{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+
+    background-color: #BCFD00;
+}
+section.courses .portfolio p{
+    color: #0008A4;
+    font: 400 1rem 'Poppins';
+    text-align: center;
+}
+section.courses .portfolio a{
+    padding: 1rem 4rem;
+    border-radius: 100px;
+    width: max-content;
+    
+    text-decoration: none;
+    font: 400 1rem 'Poppins';
+    text-align: center;
+    
+    color: #BCFD00;
+    border: 1px solid #0008A4;
+    background-color: #0008A4;
+}
+section.courses .portfolio a:hover{
+    background-color: #BCFD00;
+    color: #0008A4;
+    transition: all 300ms;
+}
+
+
+section.about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vw;
+    padding: 4rem 10vw;
+    background-color: #EEEEEE;
+}
+section.about .text{
+    width: 100%;
+}
+section.about .text h2{
+    color: #0008A4;
+    font: 400 1.2rem 'Poppins';
+    text-align: center;
+}
+section.about img.main{
+    width: 100%;
+    order: 2;
+}
+section.about .text h2 span{
+    background-color: #BCFD00;
+    font-weight: 700;
+    padding-inline: 5px;
+}
+section.about .text div.line{
+    width: 100%;
+    margin-block: 1rem;
+}
+section.about .text h3{
+    font: 700 1.5rem 'Poppins';
+    color: #0008A4;
+}
+section.about .text .paragraph{
+    font: 400 1rem 'Poppins';
+    color: #0008A4;
+    margin-top: 1rem;
+}
+section.about .text .paragraph span{
+    font-weight: 700;
+}
+section.about .text img.logo{
+    width: 10rem;
+    margin-top: 2rem;
+}
+
+
+
+section.card{
+    margin: 10vh 10vw;
+    background-color: #BCFD00;
+    border-radius: 20px;
+    height: max-content;
+}
+section.card h2{
+    text-align: center;
+    font: 500 2rem 'Dirtyline36';
+    padding: 2rem 1rem 0;
+    color: #0008A4;
+}
+section.card h3{
+    text-align: center;
+    font: 500 2rem 'Dirtyline36';
+    padding: 0.5rem 1rem;
+    color: #BCFD00;
+    background-color: #0008A4;
+}
+section.card p.paragraph{
+    text-align: center;
+    font: 400 1rem 'Poppins';
+    color: #0008A4;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+section.card p.bold{
+    margin-top: 0;
+    font-weight: 700
+}
+section.card .wrapper{
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    margin-top: 2rem;
+}
+section.card .wrapper p{
+    font: 500 1rem 'Dirtyline36';
+    text-align: center;
+    color: #0008A4;
+}
+section.card .wrapper img{
+    width: 100%;
+}
+
+
+
+section.forms{
+    padding: 4rem 10vw 10rem;
+}
+section.forms .wrapper{
+    background-color: #0008A4;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 8rem;
+    height: 80vh;
+}
+section.forms .wrapper .text{
+    width: 50%;
+}
+section.forms .wrapper .text h2{
+    font: 500 3rem 'Poppins';
+    color: #FFFFFF;
+}
+section.forms .wrapper .text h2 span{
+    color: #BCFD00;
+    font-weight: 700;
+}
+section.forms .wrapper .text .subtitle{
+    font: 400 1rem 'Poppins';
+    color: #FFFFFF;
+    margin-block: 4rem;
+}
+section.forms form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+section.forms form label{
+    margin: 1rem 0 0.5rem ;
+    font: 500 1rem 'Poppins';
+    color: #BCFD00;
+}
+section.forms form input{
+    font: 500 1rem 'Poppins';
+    padding: 1rem;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    color: #0008A4;
+    background-color: #FFFFFF;
+}
+section.forms form button{
+    font: 700 1rem 'Poppins';
+    color: #0008A4;
+    background-color: #BCFD00;
+    border: 2px solid #BCFD00;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+section.forms form button:hover{
+    background-color: #0008A4;
+    color: #BCFD00;
+    transition: all 300ms;
+}
+
+
+
+footer{
+    padding: 0 10vw 3vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #BCFD00;
+}
+footer img.bg-object{
+    position: absolute;
+    top: 45%;
+    left: -4rem;
+    transform: translateY(-50%);
+    width: 40vw;
+}
+footer .logo{
+    background-color: #0008A4;
+    width: max-content;
+    margin-inline: auto;
+    padding: 0.5rem 3rem;
+    border-radius: 0px 0px 20px 20px;
+}
+footer .logo img{
+    width: 13rem;
+}
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+footer .wrapper p.title{
+    font: 400 2.5rem 'Poppins';
+    color: #0008A4;
+}
+footer .wrapper p.title span{
+    font-weight: 700;
+}
+footer .wrapper .links{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+footer .wrapper .links a{
+    text-decoration: none;
+    color: #0008A4;
+    border: 1px solid #0008A4;
+    font: 400 0.8rem 'Poppins';
+    text-align: center;
+    padding: 1rem 0.5rem;
+    border-radius: 100px;
+}
+footer .wrapper .links a:hover{
+    background-color: #0008A4;
+    color: #BCFD00;
+    transition: all 300ms;
+}
+footer nav{
+    width: 60%;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+footer nav a{
+    text-decoration: none;
+    font: 400 0.8rem 'Poppins';
+    color: #0008A4;
+}
+.rodape{
+    padding: 1rem;
+    background-color: #EEEEEE;
+}
+.rodape p{
+    text-align: center;
+    font: 400 0.8rem 'Poppins';
+    color: #0008A4;
+}
