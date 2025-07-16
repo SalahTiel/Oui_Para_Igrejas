@@ -334,7 +334,7 @@ section.courses .row{
     align-items: center;
 }
 section.courses .portfolio{
-    width: 100vw;
+    width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -412,6 +412,9 @@ section.about .text .paragraph{
 }
 section.about .text .paragraph span{
     font-weight: 700;
+}
+section.about .text .paragraph span.bg{
+    background-color: #BCFD00;
 }
 section.about .text img.logo{
     width: 10rem;
@@ -548,11 +551,11 @@ footer .logo{
     background-color: #0008A4;
     width: max-content;
     margin-inline: auto;
-    padding: 0.5rem 3rem;
+    padding: 0 2rem;
     border-radius: 0px 0px 20px 20px;
 }
 footer .logo img{
-    width: 13rem;
+    width: 15rem;
 }
 footer .wrapper{
     display: flex;
@@ -588,7 +591,7 @@ footer .wrapper .links a:hover{
     transition: all 300ms;
 }
 footer nav{
-    width: 60%;
+    width: 40%;
     justify-content: space-between;
     display: flex;
     position: relative;

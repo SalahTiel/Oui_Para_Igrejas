@@ -244,3 +244,11 @@
         text-align: center;
     }
 }
+
+
+
+@media (max-width: 768px) {
+    section.home img.main {
+        transform: none;
+    }
+}
